@@ -23,4 +23,21 @@ public class BookArray {
         }
     }
 
+// Get a book by index
+    public Book getBook(int index) {
+        if (index >= 0 && index < books.size()) {
+            return books.get(index);
+        }
+        return null;
+    }
+
+    // Get the size of the list
+    public int getSize() {
+        return books.size();
+    }
+
+    // Get all books
+    public List<Book> getBooks() {
+        return books;
+    }
 }

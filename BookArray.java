@@ -22,5 +22,12 @@ public class BookArray {
             books.remove(index);
         }
     }
+    // Get a book by index
+    public Book getBook(int index) {
+        if (index >= 0 && index < books.size()) {
+            return books.get(index);
+        }
+        return null;
+    }
 
 }
